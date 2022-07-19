@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codez avec nous</title> 
+  <link rel="icon" href="images/logooo.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"> <img src="images/logooo.png" alt="logo"></a>
+			<div class="nav-links" id="navlinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Acceuil</a></li>
+					<li><a href="html.html">HTML5</a></li>
+					<li><a href="css.html">CSS3</a></li>
+					<li><a href="js.html">Java Script</a></li>
+					<li class="ct"><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>		
+        </nav>
+		<div class="text-box">
+			 <h1>Codez avec nous</h1>
+             <p>Nous apprendrons les outils de base que tout codeur de page Web doit connaître. Nous partirons de zéro en apprenant à implémenter des pages web modernes avec HTML et CSS <br>Grâce à Javascript, nous pourrons construire une application web entièrement fonctionnelle.</p>
+             <a href=#roww class="hero-btn">VOIR PLUS</a> 
+		</div>
+	</section>
+
+<!------JavaScript------>
+	<script type="text/javascript">
+		var navlinks=document.getElementById("navlinks");
+		function showMenu(){
+			navlinks.style.right="0";
+			navlinks.style.display="block";
+		}
+		function hideMenu(){
+			navlinks.style.display="none";
+		}
+	</script>
+<!------contenu----->
+<div class="scroll_to_top">
+		<a href="#top"><img src="images/scrolltop.png" alt="Retourner en haut" /></a>
+	</div>
+<section class="lang">
+	<h1>Les languages incontournables </h1>
+	<p>Nous vous offrons l'opportunité de découvrir le développement web en utilisant HTML5, CSS3 et Java Script.</p>
+	<div class="row">
+		<div class="lang-info">
+			<h2>HTML5</h2>
+			<p>HTML5 (HyperText Markup Language 5) est la dernière révision majeure d'HTML (format de données conçu pour représenter les pages web). Cette version a été finalisée le 28 octobre 2014. HTML5 spécifie deux syntaxes d'un modèle abstrait défini en termes de DOM : HTML5 et XHTML5. Le langage comprend également une couche application avec de nombreuses API, ainsi qu'un algorithme afin de pouvoir traiter les documents à la syntaxe non conforme</p>
+		</div>
+		<div class="lang-info">
+			<h2>CSS3</h2>
+			<p>Le développement du troisième niveau des feuilles de styles en cascade commence dès 1999, parallèlement à celui de CSS 2.1. CSS3 devient « modulaire », afin de faciliter ses mises à jour, mais aussi son implémentation par des agents utilisateurs aux capacités et aux besoins de plus en plus variés (navigateurs graphiques, navigateurs pour mobiles, navigateurs vocaux). Les navigateurs peuvent ainsi implémenter des sous-ensembles de CSS3</p>
+		</div>
+		<div class="lang-info">
+			<h2>Java Script</h2>
+			<p>JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs2. C’est un langage orienté objet à prototype, càd que les bases du langage et ses principales interfaces sont fournies par des objets qui ne sont pas des instances de classes, mais qui sont chacun équipés de constructeurs permettant de créer leurs propriétés, et notamment une propriété de prototypage qui permet d’en créer des objets héritiers personnalisés</p>
+		</div>
+		
+	</div>
+</section>
+
+<section class="" ="Contenu">
+	<h1 id="roww">Notre contenu</h1>
+	<div class="row" >
+		<div class="contenu-info" ><a href="html.html" >
+			<img src="images/html.png" alt="logo html">
+			<div class="layer"class="tt" href="html.html" >
+				<h2> HTML 5</h2>
+			</div></a>
+	    </div>
+
+	    <div class="contenu-info"><a href="css.html">
+			<img src="images/css.png" alt="logo css">
+			<div class="layer">
+				<h2>CSS 3 </h2>
+			</div></a>
+	    </div>
+
+	    <div class="contenu-info"><a href="js.html">
+			<img src="images/js.png" alt="logo javascript">
+			<div class="layer">
+				<h2>JAVA SCRIPT</h2>
+			</div></a>
+	    </div>
+
+	</div>
+</section>
+
+<section class="cta">
+	<h1>Pour plus d'informations n'hesitez pas de nous contacter</h1>
+	<a href="contact.html" class="hero-btn" >CONTACT</a>
+</section>
+
+
+<!-----footer----->
+<section class="footer">
+	<h4>A propos de nous</h4>
+	<P>Nous avons créer un site web pour aider les jeunes développeur à bien maitriser HTML, CSS et Java Script</P>
+	<div class="icons">
+		<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter"></i></a>	
+		<a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a>
+		<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>	
+		<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+	
+	</div>
+	<p>Made with <i class="fa fa-heart"> by Ghassen Ben Jannet</i>	</p>
+</section>
+</body>
+</html>

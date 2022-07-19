@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codez avec nous</title>
+  <link rel="icon" href="images/logooo.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"> <img src="images/logooo.png" alt="logo"></a>
+			<div class="nav-links" id="navlinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Acceuil</a></li>
+					<li><a href="html.html">HTML5</a></li>
+					<li><a href="css.html">CSS3</a></li>
+					<li><a href="js.html">Java Script</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>		
+        </nav>
+        <div class="text-box">
+			 <h1>JAVA SCRIPT</h1>
+             <p>JavaScript est un langage de programmation qui permet d’implémenter des mécanismes complexes sur une page web. <br>À chaque fois qu’une page web fait plus que simplement afficher du contenu statique, afficher du contenu mis à jour à des temps déterminés, des cartes interactives, des animations 2D/3D, des menus vidéo défilants, etc..</p>
+        </div>
+        
+	</section>
+
+<!------JavaScript------>
+	<script type="text/javascript">
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+            navlinks.style.display="block";
+        }
+        function hideMenu(){
+            navlinks.style.display="none";
+        }
+    </script>
+<!------contenu html ----->
+
+<section class="contenu-html">
+	<div class="row">
+		<div class="html-left">				
+			<h2>Introduction au Java Script</h2>
+			<p>Quelques particularités de JavaScript :</p>
+			<ul>
+				<li>exécuté dans le navigateur, côté client. Par opposition aux calculs réalisés côté serveur (avec Python, PhP, node.js)</li>
+				<li>javascript est un langage “orienté objet” comme presque tous les langages “majeurs” (à l’exception notable du langage C, le “parent” des langages modernes.)</li>
+				<li>javascript permet, depuis peu, d’être exécuté côté serveur grâce à Node.js</li>
+				<li>javascript réagit à des “événements”. Un événement est une action qui se produit dans le système et auquel javascript peut répondre :<br>
+					<code>onmouseover ==</code> “quand la souris passe sur cet élément…”<br>
+					<code>bouton.onmouseover = function(){ fais ceci }</code> : quand la souris passe au dessus du bouton, fais ceci.</li>
+			</ul>
+			<br>
+			<img src="images/img3.png">
+		</div>
+		<div class="somm">
+			<ul><h3>SOMMAIRE</h3></ul>
+			<li><a href="#j1">Intégrer à une page html</a></li>
+			<li><a href="#j2">Syntaxe</a></li>
+            <li><a href="#j3">Les fonctions</a></li>
+            <li><a href="#j4">Tests</a></li>
+            <li><a href="#j5">Boucle While</a></li>
+            <li><a href="#j6">Boucle For</a></li>
+            
+        </div>
+	</div>
+	<div class="scroll_to_top">
+		<a href="#top"><img src="images/scrolltop.png" alt="Retourner en haut" /></a>
+	</div>
+    <div class="cours">
+    	<div id ="j1">
+    		<h2>Intégrer à une page html</h2>
+    		<p>Il existe plusieurs moyens, le plus courant (et le meilleur) consiste à appeler un fichier <code>.js</code> depuis une page avec la balise <code>script</code></p>
+    		<img class="css" src="images/j1.png"><br>
+    		<p>Et dans " monscript.js " se trouve le code JavaScript associé.</p>
+	    </div>
+
+	    <div id ="j2">
+    		<h2>Syntaxe</h2>
+    		<p>Elle est dérivée du langage C (comme Java, C++, C# et tant d’autres). C’est une syntaxe que vous apprendrez forcement si vous décidez d’étudier l’informatique.L’indentation est optionnelle mais indispensable si vous voulez comprendre ce que vous faîtes</p>
+    		<ul>
+    		<li><h3>Commentaires</h3>
+    	  		<img class="css"src="images/j2.png">
+    	  	</li>
+    	  	<li><h3>Variables</h3>
+    	  		<p>Plusieurs manières de les déclarer :</p>
+    	  		<img class="css"src="images/j3.png">
+    	  	</li>
+    	  	<li><h3>Selectioner un élément d’une page</h3>
+    	  		<p>La variable elem est maintenant une référence vers l’élément ayant l’id #monid et toutes ses propriétés.</p>
+    	  		<img class="css"src="images/j4.png">
+    	  	</li>
+    	  	<li><h3>Modifer un contenu html</h3>
+    	  		<p>On écrase le contenu HTML de l’élément #monid par ce qui se trouve à droite du signe =</p>
+    	  		<img class="css"src="images/j5.png">
+    	  	</li>
+    	  	<li><h3>Événéments</h3>
+    	  		<p>Un exemple :Considérons le code html suivant :</p>
+    	  		<img class="css"src="images/jh.png">
+    	  		<p>Et le javascript associé :</p>
+    	  		<img class="css"src="images/j6.png">
+    	  	</li>
+    		</ul>
+	    </div>
+
+	    <div id ="j3">
+    	  <h2>Les fonctions</h2>
+    	  <p>Il eAu passage, on a rencontré ici une fonction.On peut nommer les fonctions comme en Python </p>
+    		<img class="css"src="images/j7.png">
+    		<ul>
+    			<li>la fonction s'appelle <code>random</code></li>
+    			<li>Elle prend un paramètre appelé <code>number</code></li>
+    			<li>Elle renvoie le résultat d'un calcul contenu dans la variable <code>nombre</code></li>
+    			<li>Le calcul consiste à :
+    				<ol>
+    					<li>Tirer un nombre réel au hasard entre 0 et 1 (un flottant) avec Math.random()</li>
+    					<li>Le multiplier par (number + 1) (il est entre 0 et number + 1)</li>
+    					<li>L'arrondir à l'entier inférieur avec Math.floor(...)</li>
+    				</ol>
+    			</li>
+    		</ul>
+    		<p>On l’appelle avec :</p>
+    		<img class="css"src="images/j8.png">
+    		<p>Un analogue en Python serait :</p>
+    		<img class="css"src="images/j9.png">
+	    </div>
+
+	    <div id ="j4">
+    	  <h2>Tests</h2>
+    	  <p>Les conditions entre <code>()</code>, les blocs exécutés entre <code>{ }</code></p>
+    	  <img class="css"src="images/j10.png">
+	    </div>
+
+	     <div id ="j5">
+    	  <h2>Boucle While</h2>
+    	  <img class="css"src="images/j11.png">
+    	  <p>Par exemple:</p>
+    	  <img class="css"src="images/j12.png">
+	    </div>
+
+	    <div id ="j6">
+    	  <h2>Boucle For</h2>
+    	  <p>Il existe des dizaines de manières d’écrire une boucle for en JavaScript.<br>La plus courante est</p>
+    	  <img class="css"src="images/j13.png">
+    	  <p>dans les () on a 3 éléments :</p>
+    	  <ol> 
+    	  	<li><code>let i = 0 </code>: on déclare le compteur.</li>
+    	  	<li><code>i < 5 </code>: tant que i est < 5./</li>
+    	  	<li><code>i++ </code>: augmente i de 1 à chaque tour.</li>
+    	  </ol>
+    	  	<p>Toujours le même principe, les critères entre <code>()</code>  et le bloc exécuté entre <code>{}</code></p>
+    	  </div>
+   </div>
+</section>
+<!--contenu--->
+<!-----footer------------->
+<section class="footer">
+	<h4>A propos de nous</h4>
+	<P>Nous avons créer un site web pour aider les jeunes développeur à bien maitriser HTML, CSS et Java Script</P>
+	<div class="icons">
+		<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter"></i></a>	
+		<a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a>
+		<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>	
+		<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+	</div>
+	
+	<p>Made with <i class="fa fa-heart"> by Ghassen Ben Jannet</i>	</p>
+</section>
+</body>
+</html>

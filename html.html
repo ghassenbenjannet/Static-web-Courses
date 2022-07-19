@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codez avec nous</title>
+  <link rel="icon" href="images/logooo.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"> <img src="images/logooo.png" alt="logo"></a>
+			<div class="nav-links" id="navlinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Acceuil</a></li>
+					<li><a href="html.html">HTML5</a></li>
+					<li><a href="css.html">CSS3</a></li>
+					<li><a href="js.html">Java Script</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>		
+        </nav>
+        <div class="text-box">
+			 <h1>HTML 5</h1>
+             <p>Pour débuter sereinement avec une nouvelle intégration HTML5 et comprendre ses implications, nous allons commencer par le début : la structure globale d'un document.</p>
+        </div>
+        
+	</section>
+
+<!------JavaScript------>
+	<script type="text/javascript">
+		var navlinks=document.getElementById("navlinks");
+		function showMenu(){
+			navlinks.style.right="0";
+			navlinks.style.display="block";
+		}
+		function hideMenu(){
+			navlinks.style.display="none";
+		}
+	</script>
+<!------contenu html ----->
+<section class="contenu-html">
+	<div class="row">
+		<div class="html-left">				
+			<h2>Introduction au HTML</h2>
+			<p>La conception d'une page web en suivant la philosophie du standard HTML5 spécifié par le W3C (ou du standard vivant tel que désigné par le WhatWG) répond à quelques réflexes de base. La structure d'un document (l'imbrication des balises à la racine) est simplfiiée pour répondre aux attentes pragmatiques des intégrateurs et webdesigners.</p><br>
+			<img src="images/ccimg.png">
+		</div>
+		<div class="somm">
+			<ul><h3>SOMMAIRE</h3></ul>
+			<li><a href="#l1"> Un document HTML5 minimal</a></li>
+			<li><a href="#l2"> Le doctype</a></li>
+            <li><a href="#l3">L'élément racine</a></li>
+            <li><a href="#l4">L'attribut lang</a></li>
+            <li><a href="#l5">Les fameux head et body </a></li>
+            <li><a href="#l6">L'attribut charset</a></li>
+            <li><a href="#l7">L'élément link</a></li>
+            <li><a href="#l8">L'élément Script</a></li>
+            <li><a href="#l9">Autres éléments</a></li>
+        </div>
+	</div>
+	<div class="scroll_to_top">
+		<a href="#top"><img src="images/scrolltop.png" alt="Retourner en haut" /></a>
+	</div>
+    <div class="cours">
+    	<div id ="l1">
+    		<h2>Un document HTML5 minimal</h2>
+    		<p>Sans surprise, les bases d'un code HTML5 ressemblent beaucoup à celles rédigées à l'aide des précédentes versions HTML 4 et XHTML 1.x. Rétro-compatibilité oblige.<br> On y retrouve donc un doctype suivi des éléments les plus courants : <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <cod>&lt;title&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;script&gt;</code> et <code class="language-html">&lt;body&gt;</code></p>
+    		<img src="images/html_code.png">
+	    </div>
+
+	    <div id ="l2">
+    		<h2>Le doctype</h2>
+    		<p>La première ligne d'en-tête a été considérablement simplifiée.&nbsp;On peut maintenant retenir un <em>doctype</em>&nbsp;par coeur, sans avoir à le copier-coller.</p><code class="codehtml">&lt;!doctype html&gt;</code>
+	    </div>
+
+	    <div id ="l3">
+    	  <h2>L'élément racine</h2>
+    	  <p>C'est lui qui va recueillir les deux principaux éléments de la hiérarchie : <code>&lt;head&gt;</code> et <code >&lt;body&gt;</code>.</p>
+    		<img src="images/racine2.png">
+
+	    </div>
+	    <div id ="l4">
+    	  <h2>L'attribut lang</h2>
+    	  <p>On a tendance à l'oublier : l'attribut <code>lang</code> précise la langue utilisée pour le contenu de la page, lorsqu'il est placé sur la racine <code >&lt;html&gt;</code>.</p>
+    	  <code class="codehtml">&lt;html lang="fr"&gt;</code>
+    	  <p>Une langue bien indiquée sera utile ainsi aux synthèses vocales (pour adopter le bon accent).</p>
+
+	    </div>
+
+	     <div id ="l5">
+    	  <h2>Les fameux head et body</h2>
+    	  <p>À ce niveau, le code HTML peut être divisé en deux parties : l'en-tête située entre les balises <code>&lt;head&gt;</code> et <code>&lt;/head&gt;</code>, qui regroupe toutes les méta-informations, c'est-à-dire les données qui ne sont pas représentées directement à l'écran dans le rendu du document, mais qui lui sont tout de même liées : le titre dans <code*>&lt;title&gt;</code> (extrêmement recommandé), les autres méta-informations variées (facultatives : mots-clés, description générale de la page) dans zéro ou plusieurs <code>&lt;meta&gt;</code>, et éventuellement <code>&lt;link&gt;</code>, <code">&lt;script&gt;</code> ou <code>&lt;style&gt;</code>.</p>
+    	  <p>La deuxième partie comprend le corps à proprement parler, c'est-à-dire <code>&lt;body&gt;</code>. On y retrouvera tout le reste du contenu HTML, structuré par des balises variées - selon ce que l'on aura à y placer - et dont l'apparence sera affectée par les styles CSS chargés dans <code>&lt;link&gt;</code> et/ou <code >&lt;style&gt;</code>.</p>
+	    </div>
+
+	    <div id ="l6">
+    	  <h2>L'attribut charset</h2>
+    	  <p>Préciser l'encodage des caractères est primordial pour exploiter la bonne page de code et ne pas se retrouver avec les caractères spéciaux ou accentués. Le choix de l'UTF-8 est désormais préconisé par le W3C pour tous les protocoles échangeant du texte sur internet (dont HTML).</p>
+    	  <code class="codehtml">&lt;meta charset="utf-8"&gt;</code>
+    	  <p>On retrouvera donc très souvent ce codage de caractères, par contre il faut toujours veiller à ce que l'éditeur permettant de coder en HTML (que ce soit un IDE tout-en-un ou un simple éditeur de texte) enregistre le fichier avec le bon encodage, et non en Latin-1 (alias ISO-5589-1) ou ANSI si la balise <code>&lt;meta&gt;</code> indique UTF-8.</p>
+	    </div>
+
+	    <div id ="l7">
+    	  <h2>L'élément link</h2>
+    	  <p>Dans la majorité des cas, une balise <code>&lt;link&gt;</code> placée dans l'en-tête permet de mettre en relation la page avec d'autres documents externes. La plupart du temps cela concerne les feuilles de style CSS externes avec une relation du type <code>stylesheet</code>, mais il est aussi possible de définir d'autres types de relations (par exemple avec <code>author</code>, <code>icon</code>, <code>prefetch</code>, <code>next</code>, <code>prev</code>, etc).</p> 
+    	  <code class="codehtml">&lt;link rel="stylesheet" href="style.css"&gt;</code>
+    	  <p>En HTML5, il n'est plus strictement obligatoire de spécifier l'attribut <code>type</code>.</p><p>Pour inclure directement des instructions CSS dans le document HTML sans passer par un fichier externe, <code>&lt;style&gt;</code> est à votre service. Cependant, il vaut mieux faire confiance à un fichier indépendant : il n'y aura qu'un seul code à maintenir pour de multiples pages (voire pour tout le site), et la mise en cache par le navigateur n'en sera que plus efficace.</p>
+	    </div>
+
+	    <div id ="l8">
+    	  <h2>L'élément Script</h2>
+    	  <p>Cet élément permet d'ajouter des scripts (JavaScript) qui vont s'éxécuter côté client dans le navigateur dès leur chargement.</p>
+    	  <code class="codehtml">&lt;script src="script.js"&gt;&lt;/script&gt;  </code></pre>
+    	  <p>En HTML5, il n'est plus obligatoire de spécifier l'attribut <code>type</code>. Celui-ci est de toute manière interprété par défaut en <code>text/javascript</code> par tous les navigateurs.</p>
+	    </div>
+
+	    <div id ="l9">
+    	  <h2>Autres éléments</h2>
+    	  <p>Une fois la structure de base préparée, il est temps de commencer à y placer d'autres éléments HTML pour le contenu à proprement parler : paragraphes, listes, liens, images, vidéos, tableaux de données, formulaires, etc.&nbsp;La majorité des éléments HTML sont toujours au rendez-vous dans HTML5, qui se voit complété par quelques nouveautés pour le balisage. Par exemple :</p>
+    	  <ul>
+    	  	<li>Éléments de section <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code> et <code>&lt;aside&gt;</code></li>
+    	  	<li>Élément <code>&lt;datalist&gt;</code></li>
+    	  	<li>Éléments <code>&lt;details&gt;</code> &amp; <code>&lt;summary&gt;</code></li>
+    	  	<li>Éléments <code>&lt;figure&gt;</code> &amp; <code>&lt;figcaption&gt;</code></li>
+    	  	<li>Éléments média <code>&lt;audio&gt;</code> et <code>&lt;video&gt;</code> complétés par <code>&lt;source&gt;</code></li>
+    	  	<li>Élément <code>&lt;canvas&gt;</code></li>
+    	  	<li>Éléments&nbsp;<code>&lt;meter&gt;</code>, <code>&lt;output&gt;</code> et <code>&lt;progress&gt;</code></li>
+    	  	<li>Élément <code>&lt;time&gt;</code> et <code >&lt;mark&gt;</code></li>
+    	  	<li>Et tous les autres, que l'on peut retrouver dans une liste complète maintenue par le W3C : HTML :The Markup Language</li>
+    	  </ul>
+	    </div>
+
+
+
+   </div>
+</section>
+<!--contenu--->
+	
+
+
+
+
+<!-----footer------------->
+<section class="footer">
+	<h4>A propos de nous</h4>
+	<P>Nous avons créer un site web pour aider les jeunes développeur à bien maitriser HTML, CSS et Java Script</P>
+	<div class="icons">
+		<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter"></i></a>	
+		<a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a>
+		<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>	
+		<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+	</div>
+	
+	<p>Made with <i class="fa fa-heart"> by Ghassen Ben Jannet</i>	</p>
+</section>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codez avec nous</title>
+  <link rel="icon" href="images/logooo.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"> <img src="images/logooo.png" alt="logo"></a>
+			<div class="nav-links" id="navlinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Acceuil</a></li>
+					<li><a href="html.html">HTML5</a></li>
+					<li><a href="css.html">CSS3</a></li>
+					<li><a href="js.html">Java Script</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>		
+        </nav>
+        <div class="text-box">
+			 <h1>CSS 3</h1>
+             <p>CSS est l’acronyme de « Cascading Style Sheets » ce qui signifie « feuille de style en cascade ».<br>Le CSS correspond à un langage informatique permettant de mettre en forme des pages web (HTML ou XML).<br>Ce langage est donc composé des fameuses « feuilles de style en cascade » également appelées fichiers CSS (.css) et contient des éléments de codage.</p>
+        </div>
+        
+	</section>
+
+<!------JavaScript------>
+	<script type="text/javascript">
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+            navlinks.style.display="block";
+        }
+        function hideMenu(){
+            navlinks.style.display="none";
+        }
+    </script>
+<!------contenu html ----->
+<section class="contenu-html">
+	<div class="row">
+		<div class="html-left">				
+			<h2>Introduction au CSS</h2>
+			<p>Si HTML décrit la structure du document, CSS en réalise la mise en forme.C’est CSS qui permet d’appliquer des couleurs, des changements de fontes, de taille etc.CSS pour “Cascading Style Sheets” ou “feuilles de style en cascadre”</p><br>
+			<img src="images/img2.png">
+		</div>
+		<div class="somm">
+			<ul><h3>SOMMAIRE</h3></ul>
+			<li><a href="#e1"> Le principe de CSS</a></li>
+			<li><a href="#e2"> Anatomie d’une règle CSS</a></li>
+            <li><a href="#e3">Sélectionner plusieurs éléments</a></li>
+            <li><a href="#e4">Les différents types de sélecteurs</a></li>
+            <li><a href="#e5">Les grands types de mise en forme </a></li>
+        </div>
+	</div>
+	<div class="scroll_to_top">
+		<a href="#top"><img src="images/scrolltop.png" alt="Retourner en haut" /></a>
+	</div>
+    <div class="cours">
+    	<div id ="e1">
+    		<h2>Le principe de CSS</h2>
+    		<p>Le principe de CSS est d’appliquer une mise en forme à un ou des éléments sélectionnés.Ainsi :</p>
+    		<img class="css" src="images/css1.png"><br>
+    		Va :
+    		<li>sélectionner tous les paragraphes contenus dans des balises<code>&lt;p&gt; </code></li>
+    		<li>Leur appliquer les commandes entre les<code> { }</code></li>
+    		Dans notre exemple, <code> color </code>  désigne la couleur du texte, qui sera rouge.
+
+
+    	</p>
+	    </div>
+
+	    <div id ="e2">
+    		<h2>Anatomie d’une règle CSS</h2>
+    		<p>La première ligne d'en-tête a été considérablement simplifiée.&nbsp;On peut maintenant retenir un <em>doctype</em>&nbsp;par coeur, sans avoir à le copier-coller.</p>
+    		<img class="css" src="images/css2.png"><br>
+    		<h3>Sélecteur</h3>
+    		<p>C&rsquo;est le nom de l&rsquo;élément HTML situé au début de l&rsquo;ensemble de règles. Il permet de sélectionner les éléments sur lesquels appliquer le style souhaité (en l&rsquo;occurence, les éléments <code>p</code>). Pour mettre en forme un élément différent, il suffit de changer le sélecteur.</p>
+    		<h3>Déclaration</h3>
+    		<p>C&rsquo;est une règle simple comme <code>color: red;</code> qui détermine les propriétés de l&rsquo;élément que l&rsquo;on veut mettre en forme.</p>
+    		<h3>Propriétés</h3>
+    		<p>Les différentes façons dont on peut mettre en forme un élément HTML (dans ce cas, color est une propriété des éléments &lsquo;p&rsquo;). En CSS, vous choisissez les différentes propriétés que vous voulez utiliser dans une règle CSS.</p>
+    		<h3>Valeur de la propriété</h3>
+    		<p>À droite de la propriété, après les deux points, on a la valeur de la propriété. Celle-ci permet de choisir une mise en forme parmi d&rsquo;autres pour une propriété donnée (par exemple, il y a d&rsquo;autres couleurs que red pour la propriété color).</p>
+    		<p>Les autres éléments importants de la syntaxe sont :</p>
+    		<ul>
+    			<li>chaque ensemble de règles, à l&rsquo;exception du sélecteur, doit être entre ccolades <code>{}</code>.</li>
+    			<li>pour chaque déclaration, il faut utiliser deux points <code>:</code> pour séparer la
+    			propriété de ses valeurs.</li>
+    			<li>pour chaque ensemble de règles, il faut utiliser un point-virgule <code>;</code> pour
+    			séparer les déclarations entre elles.</li>
+    		</ul>
+    		<p>Ainsi, si on veut modifier plusieurs propriétés d’un coup, on peut utiliser plusieurs déclarations dans une seule règle en les séparant par des points-virgules :</p>
+    		<img class="css" src="images/css3.png">
+
+	    </div>
+
+	    <div id ="e3">
+    	  <h2>Sélectionner plusieurs éléments</h2>
+    	  <p>Il est aussi possible de sélectionner plusieurs types d’éléments pour appliquer à tous une même règle. Il suffit de placer plusieurs sélecteurs, séparés par des virgules. Par exemple :</p>
+    		<img class="css"src="images/css4.png">
+
+
+	    </div>
+	    <div id ="e4">
+    	  <h2>Les différents types de sélecteurs</h2>
+    	  <p>Il y a différents types de sélecteurs. Dans les exemples précédents, nous n’avons vu que les sélecteurs d’élément qui permettent de sélectionner les éléments HTML d’un type donné dans un document HTML. Mais ce n’est pas tout, il est possible de faire des sélections plus spécifiques. Voici quelques-uns des types de sélecteur les plus fréquents :</p>
+    	  <ul>
+    	  	<li><h3>Les sélecteurs de balise</h3>
+    	  		<p>Ils sélectionnent toutes les balises portant ce nom.</p>
+    	  		<img class="css"src="images/css5.png">
+    	  	</li>
+    	  	<li><h3>Les sélecteurs d’ID</h3>
+    	  		<p>Ils sélectionnent LA balise portant cette id</p>
+    	  		<img class="css"src="images/css6.png">
+    	  	</li>
+    	  	<li><h3>Les sélecteurs de classes</h3>
+    	  		<p>Ils sélectionnent TOUTES les balises portant cette classe</p>
+    	  		<img class="css"src="images/css7.png">
+    	  	</li>
+    	  	<li><h3>Les sélecteurs de classes</h3>
+    	  		<p>Ils sélectionnent les éléments donnés mais uniquement dans un certain état</p>
+    	  		<img class="css"src="images/css8.png">
+    	  	</li>
+    	  </ul>
+
+	    </div>
+
+	     <div id ="e5">
+    	  <h2>Les grands types de mise en forme</h2>
+    	  <p>On peut séparer en quelques grandes catégories les propriétés appliquées.</p>
+    	  <ul>
+    	  	<li><h3>Les polices de caractères</h3>
+    	  		<p>Ce sont les propriétés qu’on applique au texte lui même : couleur, taille, épaisseur, fonte etc.</p>
+    	  	</li>
+    	  	<li><h3>Les boites</h3>
+    	  		<p>Ces propriétés décrivent les marges intérieures <code>padding</code> et extérieures <code>margin</code> ainsi que la bordure <code>border</code> ainsi que la taille en largeur, hauteur, la couleur de fond etc.</p>
+    	  	</li>
+    	  	<li><h3>L’alignement</h3>
+    	  		<p>Souhaite-t-on aligner horizontalement, verticalement, avoir une image positionnée précisement ou à une position dépendant des dimensions de la page ?</p>
+    	  		<img class="css"src="images/css9.png">
+    	  	</li>
+    	  </ul>
+	    </div>
+   </div>
+</section>
+<!--contenu--->
+
+<!-----footer------------->
+<section class="footer">
+	<h4>A propos de nous</h4>
+	<P>Nous avons créer un site web pour aider les jeunes développeur à bien maitriser HTML, CSS et Java Script</P>
+	<div class="icons">
+		<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter"></i></a>	
+		<a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a>
+		<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>	
+		<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+	</div>
+	
+	<p>Made with <i class="fa fa-heart"> by Ghassen Ben Jannet</i>	</p>
+</section>
+</body>
+</html>

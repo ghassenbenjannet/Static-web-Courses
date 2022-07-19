@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codez avec nous</title>
+  <link rel="icon" href="images/logooo.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"> <img src="images/logooo.png" alt="logo"></a>
+			<div class="nav-links" id="navlinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Acceuil</a></li>
+					<li><a href="html.html">HTML5</a></li>
+					<li><a href="css.html">CSS3</a></li>
+					<li><a href="js.html">Java Script</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>		
+        </nav>
+        <div class="text-box">
+			 <h1>CONTACT</h1>
+             <p>Formulaire de contact</p>
+        </div>
+        
+	</section>
+
+<!------JavaScript------>
+	<script type="text/javascript">
+		var navlinks=document.getElementById("navlinks");
+		function showMenu(){
+			navlinks.style.right="0";
+      navlinks.style.display="block";
+		}
+		function hideMenu(){
+			navlinks.style.display="none";
+		}
+	</script>
+<!------contenu contact ----->
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="firstname">NOM</label>
+    <input type="text" id="fname" name="NOM" placeholder="Votre nom...">
+
+    <label for="lastname">PRENOM</label>
+    <input type="text" id="lname" name="PRENOM" placeholder="Votre prénom...">
+
+    <label for="country">REGION</label>
+    <select id="country" name="REGION">
+      
+      <option value="Algerie">Algerie </option>
+      <option value="Allemagne">Allemagne </option>
+      <option value="Egypte">Egypte </option>
+      <option value="Espagne">Espagne </option>
+      <option value="Etats_Unis">Etats_Unis </option>
+      <option value="France">France </option>
+      <option value="Italie">italie </option>
+      <option value="Maroc">Maroc </option>
+      <option value="Palestine">Palestine </option>
+      <option value="Russie">Russie </option>
+      <option value="Tunisie">Tunisie </option>
+      <option value="Turquie">Turquie </option>
+    </select>
+
+    <label for="subject">SUJET</label>
+    <textarea id="subject" name="subject" placeholder="Ecrire ici..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+<!-----footer------------->
+<section class="footer">
+	<h4>A propos de nous</h4>
+	<P>Nous avons créer un site web pour aider les jeunes développeur à bien maitriser HTML, CSS et Java Script</P>
+	<div class="icons">
+		<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter"></i></a>	
+		<a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a>
+		<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>	
+		<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+	</div>
+	
+	<p>Made with <i class="fa fa-heart"> by Ghassen Ben Jannet</i>	</p>
+</section>
+</body>
+</html>
